@@ -1,0 +1,103 @@
+{
+	"$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+	"logo": {
+		"type": "small",
+		"padding": {
+			"top": 1,
+			"right": 2
+		},
+		"color": {
+			"1": "red",
+			"2": "yellow",
+			"3": "green",
+			"4": "cyan",
+			"5": "blue",
+			"6": "magenta",
+			"7": "red",
+			"8": "yellow"
+		}
+	},
+	"display": {
+		"separator": "  ",
+		"color": {
+			"separator": "black"
+		},
+		"bar": {
+			"charElapsed": "■",
+			"charTotal": " ",
+			"width": 4
+		},
+		"percent": {
+			"ndigits": 0
+		},
+		"size": {
+			"ndigits": 1
+		},
+		"temp": {
+			"ndigits": 0
+		},
+		"freq": {
+			"ndigits": 1
+		}
+	},
+	"modules": [
+		{
+			"key": "",
+			"type": "title",
+			"keyColor": "red",
+			"outputColor": "red",
+			"format": "{#1}{user-name}{#22}{#2}{at-symbol-colored}{#1}{host-name}"
+		},
+		{
+			"key": "{icon}",
+			"type": "os",
+			"keyColor": "yellow",
+			"outputColor": "yellow",
+			"format": "{#1}{pretty-name}{#2} {version}"
+		},
+		{
+			"key": "󰻠",
+			"type": "cpu",
+			"keyColor": "green",
+			"outputColor": "green",
+			"temp": true,
+			"format": "{#1}{name}{#22} ({#1}{#2}{cores-physical}{#22}) @ {#2}{freq-max}{#22} [{#1}{temperature}{#22}]"
+		},
+		{
+			"key": "󰍛",
+			"type": "gpu",
+			"keyColor": "cyan",
+			"outputColor": "cyan",
+			"format": "{#1}{name}{#22} ({#1}{#2}{core-count}{#22}) @ {#2}{frequency}{#22}"
+		},
+		{
+			"key": "󰉉",
+			"type": "disk",
+			"keyColor": "blue",
+			"outputColor": "blue",
+			"folders": "/",
+			"format": "{#1}{size-used}{#22} / {#2}{size-total}{#22} [{#1}{size-percentage}{#22}]"
+		},
+		{
+			"key": "",
+			"type": "memory",
+			"keyColor": "magenta",
+			"outputColor": "magenta",
+			"format": "{#1}{used}{#22} / {#2}{total}{#22} [{#1}{percentage}{#22}]"
+		},
+		{
+			"key": "󰅐",
+			"type": "uptime",
+			"keyColor": "red",
+			"outputColor": "red",
+			"format": "{?1}{#1}{1} {#2}d{#22}  {?}{?2}{#1}{2} {#2}hrs{#22}  {?}{?3}{3} {#2}mins{?}"
+		},
+		{
+			"key": "󰩟",
+			"type": "localip",
+			"keyColor": "yellow",
+			"outputColor": "yellow",
+			"format": "{#1}{ipv4}{#22} [{#2}{ifname}{#22}]"
+		}
+	]
+}
