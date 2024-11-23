@@ -68,7 +68,7 @@
 			"type": "gpu",
 			"keyColor": "cyan",
 			"outputColor": "cyan",
-			"format": "{#1}{name}{#22} ({#1}{#2}{core-count}{#22}) @ {#2}{frequency}{#22}"
+			"format": "{#1}{name}{#22}"
 		},
 		{
 			"key": "󰉉",
