@@ -12,4 +12,4 @@ ln -s -f ~/dotfiles/fastfetch ~/.config/fastfetch
 
 git config --global core.excludesfile ~/.gitignore
 rm -rf ~/.gitignore
-ln -s -f ~/dotfiles/gitignore ~/.gitignore
+ln -s -f ~/dotfiles/git/.gitignore ~/.gitignore
